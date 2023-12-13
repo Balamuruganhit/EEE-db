@@ -12,7 +12,7 @@ import { dataRouter } from './Routes/DataRoutes.js';
 import {google} from 'googleapis'
 const app= express();
 app.use(cors({
-	origin: ['http://localhost:3000'],
+	origin: ['https://cheerful-figolla-a5a5c1.netlify.app'],
 	methods :['GET','POST','PUT'],
 	credentials:true
 }
