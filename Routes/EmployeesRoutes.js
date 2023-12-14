@@ -64,6 +64,11 @@ router.get('/student',async (req,res) =>{
 	return res.send(getter)
 })
 
+router.get('/logout',(req,res)=>{
+	res.clearCookie('token')
+	return res.json({status:true})
+})
+
 
 
 export{router as employeesRouter}
